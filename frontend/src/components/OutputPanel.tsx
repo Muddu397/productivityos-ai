@@ -1,3 +1,5 @@
+import ReactMarkdown from "react-markdown";
+
 type OutputPanelProps = {
   output: string;
 };
@@ -9,8 +11,10 @@ const OutputPanel = ({ output }: OutputPanelProps) => {
         AI Response
       </h2>
 
-      <div className="min-h-[250px] whitespace-pre-wrap rounded-xl border border-slate-700 bg-slate-950 p-4 text-slate-300">
-        {output || "AI response will appear here..."}
+      <div className="h-72 overflow-y-auto rounded-xl border border-slate-700 bg-slate-950 p-4">
+        <div className="prose prose-invert max-w-none text-white">
+          <ReactMarkdown>{output}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const InputPanel = ({
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter your tasks, resume, meeting notes, or any text..."
-        className="h-56 w-full rounded-xl border border-slate-700 bg-slate-950 p-4 text-white outline-none focus:border-blue-500"
+        className="h-72 w-full rounded-xl border border-slate-700 bg-slate-950 p-4 text-white outline-none focus:border-blue-700"
       />
 
       <button

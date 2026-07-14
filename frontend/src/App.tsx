@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import FeatureCard from "./components/FeatureCard";
 import InputPanel from "./components/InputPanel";
 import OutputPanel from "./components/OutputPanel";
-import { API_URL } from "./config";
+import { API_URL } from "./config.";
 
 const features = [
   {
